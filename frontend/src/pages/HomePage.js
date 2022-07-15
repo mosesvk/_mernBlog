@@ -3,8 +3,8 @@ import React from 'react';
 const HomePage = () => {
   return (
     <>
-      <div >
-        <h1 className='text-center'>Welcome to the Mern Blog</h1>
+      <div className='max-w-3xl m-auto pt-16 text-center'>
+        <h1 className=''>Welcome to the Mern Blog</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
