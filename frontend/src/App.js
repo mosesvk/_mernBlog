@@ -10,12 +10,14 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutPage />} />
-          <Route path='/article' element={<ArticlePage />} />
-          <Route path='/articlelist' element={<ArticlesListPage />} />
-        </Routes>
+        <div className='max-w-2xl m-auto pt-16'>
+          <Routes>
+            <Route path='/' element={<HomePage />} exact />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/article' element={<ArticlePage />} />
+            <Route path='/articlelist' element={<ArticlesListPage />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
