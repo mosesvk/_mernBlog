@@ -1,8 +1,10 @@
 
+import { useParams } from 'react-router-dom'
 import articleContent from './article-content'
 
-const ArticlePage = ({ match }) => {
-  const name = match.params.name
+const ArticlePage = () => {
+  const params = useParams()
+  const name = params.name
   const article = articleContent.find((article) => article.name === name)
 
   if (!article) {
