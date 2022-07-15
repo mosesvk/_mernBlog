@@ -20,7 +20,7 @@ const NavBar = () => (
       <li className='inline-block px-4'>
         <Link
           className='decoration-0	text-black font-bold px-8 py-4 hover:bg-black hover:text-white'
-          to='/articles-list'
+          to='/article-list'
         >
           Articles
         </Link>
