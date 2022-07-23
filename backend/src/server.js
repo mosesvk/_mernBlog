@@ -1,8 +1,16 @@
+
 import express from 'express';
+import bodyParser from 'body-parser'
 
 const app = express()
 
-app.get('/hello', (req, res) => res.send('Hello'))
+app.use(bodyParser.json()) 
+  // this will parse the json object that will be sent via POST requests
+  // adds a 'body' property to the 'req' parameter from whatever route
+  // we can access through 'req.body' 
 
-app.listen(8000, () => console.log('Listening on Port 8000'))
+app.get('/hello', (req, res) => res.send('Hello'))
+app.post('/hello', (req, res) => res.send(`Hello ${req.body.name}!`))
+
+app.listen(5555, () => console.log('Listening on Port 5555'))
 
